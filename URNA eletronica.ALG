@@ -1,9 +1,9 @@
 Algoritmo "semnome"
-// Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Antonio Carlos Nicolodi 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 10/10/2022
+// Disciplina   : Desenvolvimento em Aplicação
+// Professor   : Erisvaldo
+// Descrição   : Função de uma urna eletronica
+// Autor(a)    : Rangerson Clemente
+// Data atual  : 13/10/2022
 Var
 // Seção de Declarações das variáveis 
 numeroCandidato1: inteiro
@@ -19,6 +19,7 @@ conteEMbranco: inteiro
 contenulo: inteiro
 resposta: caracter
 i: inteiro
+voto: inteiro
 Inicio
 
 escreva("Informe o numero do candidato 1: ")
@@ -51,11 +52,45 @@ escreval(" Votos nulos: ",contenulo)
 escreval(" ")
 escreval(" Inciando a eleição.")
 timer(500)
-para i de 0 ate 10 faca
+para i de 0 ate 10 faca                      ,
+
      escreval(".")
      fimpara
      
      timer(0)
      limpatela
-
+     
+     repita
+           repita
+           limpatela
+           escreval(numeroCandidato1," - ",nomeCandidato1)
+           escreval(numeroCandidato2," - ",nomeCandidato2)
+           escreval(numeroCandidato3," - ",nomeCandidato3)
+           escreval(" 0 - Branco: ")
+           escreval(" ")
+           
+           escreval(" Informe o numero do candidato: ")
+           leia(voto)
+           escreval(" ")
+           escreval(" Deseja confirma o seu voto? (s) ou (n) ")
+           leia(resposta)
+           ate(resposta= "s")
+           
+               escolha voto
+               caso numeroCandidato1
+               escreval(numeroCandidato1, " - ", nomeCandidato1)
+               caso numeroCandidato2
+               escreval(numeroCandidato2, " - ", nomeCandidato2)
+               caso numeroCandidato3
+               escreval(numeroCandidato3, " - ", nomeCandidato3)
+               caso 0
+               escreval(" 0 - voto em branco")
+               outrocaso
+                        escreval(" Voto Nulo")
+               fimescolha
+               
+               escreva(" ")
+               escreval(" Deseja confirma o seu voto? (s) ou (n)")
+               leia(resposta)
+ate (resposta= "s")
 Fimalgoritmo
