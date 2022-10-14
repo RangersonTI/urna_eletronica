@@ -54,7 +54,7 @@ escreval(" Inciando a eleição.")
 timer(500)
 para i de 0 ate 10 faca
 
-     escreval(".")
+     escreva(".")
      fimpara
      
      timer(0)
