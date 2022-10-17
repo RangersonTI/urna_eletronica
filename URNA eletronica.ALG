@@ -69,5 +69,12 @@ para i de 0 ate 10 faca
      escreva("Deseja realmente confirma o seu voto (s) ou (n): ")
      leia(resposta)
      ate(resposta<> "s" )
+     
+escreval("==================BOLETIM DE URNA==================")
+escreval(numeroCandidato1," - ",nomeCandidato1," : ",conte1)
+escreval(numeroCandidato2," - ",nomeCandidato2," : ",conte2)
+escreval(numeroCandidato3," - ",nomeCandidato3," : ",conte3)
+escreval(" 1 - Branco: ",conteEMbranco)
+escreval(" 0 - Nulo: ",contenulo)
 
 Fimalgoritmo
