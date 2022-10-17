@@ -47,8 +47,8 @@ escreval("==================ZERÉZIMA==================")
 escreval(numeroCandidato1," - ",nomeCandidato1," : ",conte1)
 escreval(numeroCandidato2," - ",nomeCandidato2," : ",conte2)
 escreval(numeroCandidato3," - ",nomeCandidato3," : ",conte3)
-escreval(" 1 - Branco: ",conteEMbranco)
-escreval(" 0 - Nulo: ",contenulo)
+escreval(" 0 - Branco: ",conteEMbranco)
+escreval(" Nulo: ",contenulo)
 escreval(" ")
 escreval(" Inciando a eleição.")
 timer(500)
@@ -61,15 +61,34 @@ para i de 0 ate 10 faca
      limpatela
      
      repita
-           repita
-           escreva("Deseja confirma o seu voto (s) ou (n): ")
-           leia(resposta)
-           ate(resposta = "s")
+        repita
+        limpatela
+        escreval(" Informe o numero do candidato: ")
+              leia(voto)
+              escreval(" ")
+              escolha voto
+                  caso numeroCandidato1
+                  escreval(numeroCandidato1, " - ", nomeCandidato1)
+                  caso numeroCandidato2
+                  escreval(numeroCandidato2, " - ", nomeCandidato2)
+                  caso numeroCandidato3
+                  escreval(numeroCandidato3, " - ", nomeCandidato3)
+                  caso 0
+                  escreval(" Voto em branco")
+                  outrocaso
+                           escreval(" Voto Nulo")
+                  fimescolha
+                  escreval
 
-     escreva("Deseja realmente confirma o seu voto (s) ou (n): ")
+              escreval("Deseja confirma o seu voto (s) ou (n): ")
+              leia(resposta)
+              ate(resposta = "s")
+
+     escreval("Ainda possui eleitor para votar? (s) ou (n): ")
      leia(resposta)
-     ate(resposta<> "s" )
+     ate(resposta = "n" )
      
+escreval
 escreval("==================BOLETIM DE URNA==================")
 escreval(numeroCandidato1," - ",nomeCandidato1," : ",conte1)
 escreval(numeroCandidato2," - ",nomeCandidato2," : ",conte2)
