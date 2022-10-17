@@ -59,5 +59,15 @@ para i de 0 ate 10 faca
      
      timer(0)
      limpatela
+     
+     repita
+           repita
+           escreva("Deseja confirma o seu voto (s) ou (n): ")
+           leia(resposta)
+           ate(resposta = "s")
+
+     escreva("Deseja realmente confirma o seu voto (s) ou (n): ")
+     leia(resposta)
+     ate(resposta<> "s" )
 
 Fimalgoritmo
