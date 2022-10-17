@@ -59,6 +59,5 @@ para i de 0 ate 10 faca
      
      timer(0)
      limpatela
-     
 
 Fimalgoritmo
