@@ -47,8 +47,8 @@ escreval("==================ZERÉZIMA==================")
 escreval(numeroCandidato1," - ",nomeCandidato1," : ",conte1)
 escreval(numeroCandidato2," - ",nomeCandidato2," : ",conte2)
 escreval(numeroCandidato3," - ",nomeCandidato3," : ",conte3)
-escreval(" 0 - Branco: ",conteEMbranco)
-escreval(" Nulo: ",contenulo)
+escreval(" Voto Branco: ",conteEMbranco)
+escreval(" Voto Nulo: ",contenulo)
 escreval(" ")
 escreval(" Inciando a eleição.")
 timer(500)
@@ -63,6 +63,12 @@ para i de 0 ate 10 faca
      repita
         repita
         limpatela
+        escreval(numeroCandidato1," - ",nomeCandidato1," : ",conte1)
+        escreval(numeroCandidato2," - ",nomeCandidato2," : ",conte2)
+        escreval(numeroCandidato3," - ",nomeCandidato3," : ",conte3)
+        escreval(" 0 - Branco ")
+        escreval(" Nulo ")
+        escreval
         escreval(" Informe o numero do candidato: ")
               leia(voto)
               escreval(" ")
@@ -80,9 +86,22 @@ para i de 0 ate 10 faca
                   fimescolha
                   escreval
 
-              escreval("Deseja confirma o seu voto (s) ou (n): ")
-              leia(resposta)
-              ate(resposta = "s")
+       escreval("Deseja confirma o seu voto (s) ou (n): ")
+       leia(resposta)
+       ate(resposta = "s")
+              
+        escolha voto
+            caso numeroCandidato1
+            conte1 <- conte1+1
+            caso numeroCandidato2
+            conte2 <- conte2+1
+            caso numeroCandidato3
+            conte3 <- conte3+1
+            caso 0
+            conteEMbranco <- conteEMbranco+1
+            outrocaso
+                     contenulo <- contenulo+1
+            fimescolha
 
      escreval("Ainda possui eleitor para votar? (s) ou (n): ")
      leia(resposta)
@@ -93,7 +112,7 @@ escreval("==================BOLETIM DE URNA==================")
 escreval(numeroCandidato1," - ",nomeCandidato1," : ",conte1)
 escreval(numeroCandidato2," - ",nomeCandidato2," : ",conte2)
 escreval(numeroCandidato3," - ",nomeCandidato3," : ",conte3)
-escreval(" 1 - Branco: ",conteEMbranco)
-escreval(" 0 - Nulo: ",contenulo)
+escreval(" Branco: ",conteEMbranco)
+escreval(" Nulo: ",contenulo)
 
 Fimalgoritmo
